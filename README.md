@@ -6,7 +6,7 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 
 ## Data creation
 
-* Manual instrumentation: write a simple application which creates logs, metrics and traces using the OpenTelemetry libraries
+* [Manual instrumentation](./exercises/instrumentation/): write a simple application which creates logs, metrics and traces using the OpenTelemetry libraries
 
 * Autoinstrumentation: Pet Clinic
 
