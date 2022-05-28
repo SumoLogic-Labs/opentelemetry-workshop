@@ -1,0 +1,21 @@
+exporters:
+  logging:
+
+receivers:
+  otlp:
+    protocols:
+      http:
+
+service:
+  telemetry:
+    metrics:
+      address: 0.0.0.0:18888
+      level: none
+    logs:
+      level: info
+      initial_fields:
+        service: my-otc-instance
+  pipelines:
+    logs:
+      receivers: [otlp]
+      exporters: [logging]

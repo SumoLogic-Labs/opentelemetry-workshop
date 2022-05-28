@@ -27,7 +27,7 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 * [Exporters](https://opentelemetry.io/docs/collector/configuration/#exporters)
 * [Extensions](https://opentelemetry.io/docs/collector/configuration/#extensions)
 * [Service](https://opentelemetry.io/docs/collector/configuration/#service)
-* Telemetry
+* [Telemetry](./exercises/basics/telemetry/)
 * [Environment variables](./exercises/basics/env-variables/)
 
 #### Extensions
