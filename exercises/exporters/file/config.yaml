@@ -1,0 +1,24 @@
+exporters:
+  logging:
+    loglevel: debug
+
+receivers:
+  filelog:
+    include:
+    - ./logs.txt
+    start_at: beginning
+    operators:
+      - id: regex-parse
+        type: regex_parser
+        parse_from: body
+        regex: 'Host=(?P<host>[^,]+), Type=(?P<type>[^\s]+)'
+    include_file_name: false
+    include_file_path_resolved: true
+    attributes:
+      foo: bar
+
+service:
+  pipelines:
+    logs:
+      receivers: [filelog]
+      exporters: [logging]
