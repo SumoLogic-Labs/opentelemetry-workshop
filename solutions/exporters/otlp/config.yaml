@@ -1,0 +1,24 @@
+receivers:
+  tcplog:
+    listen_address: 0.0.0.0:12345
+  zipkin:
+
+exporters:
+  logging:
+  otlp:
+    endpoint: localhost:4317
+    tls:
+      insecure: true
+
+service:
+  telemetry:
+    metrics:
+      address: 0.0.0.0:18888
+  pipelines:
+    logs:
+      receivers: [tcplog]
+      exporters: [logging, otlp]
+    traces:
+      receivers: [zipkin]
+      exporters: [logging, otlp]
+

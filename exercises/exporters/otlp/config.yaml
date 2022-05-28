@@ -1,0 +1,20 @@
+receivers:
+  tcplog:
+    listen_address: 0.0.0.0:12345
+  zipkin:
+
+exporters:
+  logging:
+
+service:
+  telemetry:
+    metrics:
+      address: 0.0.0.0:18888
+  pipelines:
+    logs:
+      receivers: [tcplog]
+      exporters: [logging]
+    traces:
+      receivers: [zipkin]
+      exporters: [logging]
+

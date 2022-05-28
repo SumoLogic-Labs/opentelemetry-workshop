@@ -70,7 +70,7 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 ### Exporters
   
 * [File](./exercises/exporters/file/)
-* OTLP
+* [OTLP](./exercises/exporters/otlp/)
 * Load balancing
 * [Prometheus](./exercises/exporters/prometheus/)
 * Sumo Logic
