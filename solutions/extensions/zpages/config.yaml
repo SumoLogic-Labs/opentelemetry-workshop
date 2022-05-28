@@ -1,0 +1,17 @@
+exporters:
+  logging:
+
+receivers:
+  otlp:
+    protocols:
+      http:
+
+extensions:
+  zpages:
+
+service:
+  extensions: [zpages]
+  pipelines:
+    logs:
+      receivers: [otlp]
+      exporters: [logging]
