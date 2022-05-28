@@ -1,0 +1,47 @@
+version: "3"
+
+services:
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile-client
+    hostname: client
+    restart: unless-stopped
+    depends_on:
+      - otelcol
+      - server
+    environment:
+      - FIB_HOSTNAME=server
+      - FIB_PORT=8080
+      - OTEL_SERVICE_NAME=client-service
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcol:4317
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile-server
+    hostname: server
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    depends_on:
+      - otelcol
+    environment:
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://otelcol:4317
+      - OTEL_RESOURCE_ATTRIBUTES=service.name=my-app-server
+    expose:
+      - 8080
+  otelcol:
+    image: otel/opentelemetry-collector-contrib:0.52.0
+    container_name: otelcol
+    hostname: otelcol
+    command: ["--config=/config.yaml"]
+    volumes:
+        - ./config.yaml:/config.yaml
+    ports:
+      - 4317:4317
+      - 4318:4318
+      - 8888:8888
+    expose:
+      - 4317
+      - 4318
+      - 8888
