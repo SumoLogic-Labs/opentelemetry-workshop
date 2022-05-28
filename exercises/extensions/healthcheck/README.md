@@ -25,7 +25,7 @@
   2022-05-28T08:48:56.999+0200	info	healthcheckextension@v0.51.0/healthcheckextension.go:44	Starting health_check extension	{"kind": "extension", "name": "health_check", "config": {"Port":0,"TCPAddr":{"Endpoint":"0.0.0.0:13133"},"Path":"/","CheckCollectorPipeline":{"Enabled":false,"Interval":"5m","ExporterFailureThreshold":5}}}
   ```
 
-* While still running otelcol, check the health status that is exposed at the default [https://localhost:13133](https://localhost:13133). You can do that using the web browser or with help of `curl` and `jq` commands run in other console window:
+* While still running otelcol, check the health status that is exposed at the default [http://localhost:13133](http://localhost:13133). You can do that using the web browser or with help of `curl` and `jq` commands run in other console window:
 
   ```bash
   $ curl -s localhost:13133 | jq
