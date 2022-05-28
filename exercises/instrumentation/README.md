@@ -3,12 +3,12 @@
 In this set we will work with a trivial Python service - `server`, which is built on top of Flask
 and has a sole purpose of calculating a Fibonacci number.
 
-There's also another process we will use - `client`, which iterates over several arguments and calls
+There's also another process we will use - a `client`, which iterates over a set of numbers and calls
 the server.
 
-[Python instrumentation guide is available at OpenTelemetry.io website](https://opentelemetry.io/docs/instrumentation/python/getting-started/).
+[Python instrumentation guide available at OpenTelemetry.io website](https://opentelemetry.io/docs/instrumentation/python/getting-started/).
 
-[TODO: Intro to OpenTelemetry concepts](link)
+[Intro to OpenTelemetry data model concepts](slides) (can be run via [markdeck](https://github.com/arnehilmann/markdeck))
 
 1. [Warmup](plain)
 2. [Logs](logs)
