@@ -2,7 +2,7 @@
 
 OTLP protocol is one of the most important parts of the OpenTelemetry project. While here we show how to use it for traces, it can be used for logs and metrics as well.
 
-* Run the otelcol instance using the prepared [config](config.yaml) file.
+* Run the otelcol using prepared [config](config.yaml) file
 
   ```bash
   otelcol-contrib --config config.yaml

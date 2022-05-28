@@ -2,7 +2,7 @@
 
 Whenever you need to modify attributes of a log, metric or span at the record level you can use the Attributes Processor.
 
-* Run the otelcol instance using the prepared [config](config.yaml) file.
+* Run the otelcol using prepared [config](config.yaml) file
 
   ```bash
   otelcol-contrib --config config.yaml

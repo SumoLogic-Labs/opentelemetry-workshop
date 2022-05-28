@@ -12,7 +12,7 @@
 
 * Make sure to use proper documentation version on GitHub using the git branch, eg. `release/v0.51.x`
 
-* Run the otelcol instance using the prepared [config](config.yaml) file.
+* Run the otelcol using prepared [config](config.yaml) file
 
   ```bash
   otelcol-contrib --config config.yaml

@@ -2,7 +2,7 @@
 
 * Read the short excerpt from [Configuration Environment Variables documentation](https://opentelemetry.io/docs/collector/configuration/#configuration-environment-variables)
 
-* Run the otelcol instance using the prepared [config](config.yaml) file. It is a simple configuration with the static `service: my-static-name` added to all otelcol logs.
+* Run the otelcol using prepared [config](config.yaml) file - it is a simple configuration with the static `service: my-static-name` added to all otelcol logs
 
   ```bash
   otelcol-contrib --config config.yaml

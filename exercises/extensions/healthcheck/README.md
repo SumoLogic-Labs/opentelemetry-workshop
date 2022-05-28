@@ -2,7 +2,7 @@
 
 * Read the [Health Check Extension documentation](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/v0.51.0/extension/healthcheckextension/README.md)
 
-* Run the otelcol instance using the prepared [config](config.yaml) file. It is a simple configuration without any extensions added.
+* Run the otelcol using prepared [config](config.yaml) file - it is a simple configuration without any extensions added
 
   ```bash
   otelcol-contrib --config config.yaml

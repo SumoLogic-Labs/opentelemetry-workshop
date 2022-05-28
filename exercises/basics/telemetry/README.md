@@ -4,7 +4,7 @@
 
 ## Metrics
 
-* Run the otelcol instance using the prepared [config](config.yaml) file.
+* Run the otelcol using prepared [config](config.yaml) file
 
   ```bash
   otelcol-contrib --config config.yaml

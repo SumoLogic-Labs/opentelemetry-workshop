@@ -2,7 +2,7 @@
 
 It is recommended to limit the otelcol's memory usage early in the processors pipeline.
 
-* Run the otelcol instance using the prepared [config](config.yaml) file.
+* Run the otelcol using prepared [config](config.yaml) file
 
   ```bash
   otelcol-contrib --config config.yaml

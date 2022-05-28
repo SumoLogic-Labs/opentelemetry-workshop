@@ -4,7 +4,7 @@ For this excersice we need an application which will create and expose metrics i
 
 ## Otelcol instance for metrics creation
 
-* Run the otelcol instance which will create and expose metrics using the prepared [config-data-creator.yaml](./config-data-creator.yaml) file. Keep it running.
+* Run the otelcol which will create and expose metrics using the prepared [config-data-creator.yaml](./config-data-creator.yaml) file. Keep it running.
 
   ```bash
   otelcol-contrib --config config-metrics-creator.yaml

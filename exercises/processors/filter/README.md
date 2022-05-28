@@ -6,7 +6,7 @@ Whenever you need to filter out logs or metrics you can use the Filter Processor
 
 ## Logs
 
-* Run the otelcol instance using the prepared [config](config.yaml) file.
+* Run the otelcol using prepared [config](config.yaml) file
 
   ```bash
   otelcol-contrib --config config.yaml
@@ -20,7 +20,7 @@ Whenever you need to filter out logs or metrics you can use the Filter Processor
 
 ## Metrics
 
-* Uncomment `hostmetrics receiver` and `metrics pipeline` sections in the [config](./config.yaml) file. Run otelcol.
+* Uncomment `hostmetrics receiver` and `metrics pipeline` sections in the [config](config.yaml) file. Run otelcol.
 
   In addition to logs you should also see some load metrics coming in, such as:
 

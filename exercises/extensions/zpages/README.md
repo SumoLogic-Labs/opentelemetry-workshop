@@ -2,7 +2,7 @@
 
 * Read the [zPages Extension documentation](https://github.com/open-telemetry/opentelemetry-collector/blob/v0.51.0/extension/zpagesextension/README.md)
 
-* Run the otelcol instance using the prepared [config](config.yaml) file - it is a simple configuration without any extensions added
+* Run the otelcol using prepared [config](config.yaml) file - it is a simple configuration without any extensions added
 
   ```bash
   otelcol-contrib --config config.yaml
