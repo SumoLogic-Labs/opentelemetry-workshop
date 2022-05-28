@@ -3,7 +3,9 @@
 [Logs support](https://opentelemetry.io/docs/reference/specification/overview/#log-signal) is 
 in early phase in OpenTelemetry Instrumentation. Rather than replacing the 
 existing logging libraries, OpenTelemetry helps with consuming the log data by exporting
-them via OTLP as needed.
+them via OTLP as needed. 
+
+OpenTelemetry Logging is best described in the [Logs specification overview](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/overview.md)
 
 In this exercise you will setup [Python logging to send logs via OTLP](https://opentelemetry-python.readthedocs.io/en/stable/sdk/logs.html)
 

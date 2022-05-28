@@ -7,7 +7,9 @@ Spans. Each Span defines a segment of operation in a given service.
 To make that possible, services need to exchange [context](https://opentelemetry.io/docs/concepts/otel-concepts/#span-context) with each request. This is done
 by a mechanism named as [context propagation](https://opentelemetry.io/docs/reference/specification/context/context/).
 Most commonly, [w3c trace context](https://www.w3.org/TR/trace-context/) is being used for the purpose.
-The trace-id and parent-span-id are passwed with each request, which allows to continue the trace.
+The trace-id and parent-span-id are passed with each request, which allows to continue the trace.
+
+General Tracing API concepts are presented in [Tracing API Specification](https://opentelemetry.io/docs/reference/specification/trace/api/)
 
 In this exercise we will observe that mechanism and see how to create and enrich spans.
 
@@ -19,7 +21,7 @@ by using [OpenTelemetry Python Distro](https://opentelemetry.io/docs/instrumenta
 
 The docker-compose file also includes the OTLP exporter setup.
 
-We also included zipkin backend. This will allow us to investigate the traces later on.
+We also included Zipkin backend. This will allow us to investigate the traces later on.
 
 ## Initialization
 
