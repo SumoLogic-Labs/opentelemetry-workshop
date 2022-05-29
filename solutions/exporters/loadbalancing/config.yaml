@@ -1,0 +1,26 @@
+receivers:
+  zipkin:
+
+exporters:
+  logging:
+  loadbalancing:
+    protocol:
+      otlp:
+        tls:
+          insecure: true
+    resolver:
+      static:
+        hostnames:
+        - localhost:14317
+        - localhost:24317
+
+service:
+  telemetry:
+    logs:
+      initial_fields:
+        service: load-balancer
+  pipelines:
+    traces:
+      receivers: [zipkin]
+      exporters: [logging, loadbalancing]
+

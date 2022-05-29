@@ -1,0 +1,31 @@
+exporters:
+  logging:
+    loglevel: debug
+  file:
+    path: data.json
+
+receivers:
+  otlp/1:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:14317
+  otlp/2:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:24317
+
+service:
+  telemetry:
+    metrics:
+      address: 0.0.0.0:18888
+    logs:
+      initial_fields:
+        service: otlp-backend
+  pipelines:
+    traces/1:
+      receivers: [otlp/1]
+      exporters: [logging]
+    traces/2:
+      receivers: [otlp/2]
+      exporters: [file]
+

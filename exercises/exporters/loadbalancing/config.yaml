@@ -1,0 +1,16 @@
+receivers:
+  zipkin:
+
+exporters:
+  logging:
+
+service:
+  telemetry:
+    logs:
+      initial_fields:
+        service: load-balancer
+  pipelines:
+    traces:
+      receivers: [zipkin]
+      exporters: [logging]
+
