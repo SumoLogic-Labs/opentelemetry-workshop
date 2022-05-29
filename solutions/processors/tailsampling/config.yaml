@@ -1,0 +1,30 @@
+receivers:
+  otlp:
+    protocols:
+      http:
+
+processors:
+  tail_sampling:
+    decision_wait: 1s
+    num_traces: 1
+    expected_new_traces_per_sec: 1
+    policies:
+      [
+          {
+            name: catch_errors,
+            type: status_code,
+            status_code: {status_codes: [ERROR]}
+          }
+      ]
+
+exporters:
+  logging:
+    loglevel: debug
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [tail_sampling]
+      exporters: [logging]
+

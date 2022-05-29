@@ -66,6 +66,7 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 * [Attributes](./exercises/processors/attributes/)
 * [Metrics Transform](./exercises/processors/metricstransform/)
 * [Transform](./exercises/processors/transform/)
+* [Tail Sampling](./exercises/processors/tailsampling/)
 
 ### Exporters
   
