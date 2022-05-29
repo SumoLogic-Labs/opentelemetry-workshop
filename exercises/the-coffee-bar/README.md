@@ -23,6 +23,6 @@ Additionally you will need `Docker` and `Docker Compose` installed on your machi
 
 ## The Coffee Bar demo
 1. Run `docker-compose up`
-1. Navigate to `http://localhost:3000` and make some order
+1. Navigate to [http://localhost:3000](http://localhost:3000) and make some order
 1. Go to Sumo Logic Web App and find your order in [Traces view](https://help.sumologic.com/Traces/02Working_with_Tracing_data/03View_and_investigate_traces)
 1. View application logs in [Logs view](https://help.sumologic.com/05Search/Get-Started-with-Search/Search-Basics/About-Search-Basics) or drill down to the specific service log directly from `Trace view` [clicking on the span details](https://help.sumologic.com/Traces/02Working_with_Tracing_data/03View_and_investigate_traces#details-pane) and `Open logs tagged with ...`
