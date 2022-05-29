@@ -1,0 +1,12 @@
+exporters:
+  logging:
+    loglevel: debug
+
+receivers:
+
+service:
+  pipelines:
+    traces:
+      receivers: []
+      exporters: [logging]
+

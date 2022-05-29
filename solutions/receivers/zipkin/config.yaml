@@ -1,0 +1,13 @@
+exporters:
+  logging:
+    loglevel: debug
+
+receivers:
+  zipkin:
+
+service:
+  pipelines:
+    traces:
+      receivers: [zipkin]
+      exporters: [logging]
+
