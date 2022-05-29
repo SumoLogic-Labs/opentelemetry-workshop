@@ -1,6 +1,6 @@
 # Simple Prometheus Receiver exercise
 
-For this excersice we need an application which will create and expose metrics in the Prometheus format. We'll reuse the OpenTelemetry Collector for that purpose as it exposes telemetry data in the Prometheus format by default.
+For this excercise we need an application which will create and expose metrics in the Prometheus format. We'll reuse the OpenTelemetry Collector for that purpose as it exposes telemetry data in the Prometheus format by default.
 
 ## Otelcol instance for metrics creation
 
@@ -16,7 +16,7 @@ For this excersice we need an application which will create and expose metrics i
   2022-05-21T12:33:09.631+0200	info	service/telemetry.go:129	Serving Prometheus metrics	{"address": ":8888", "level": "basic", "service.instance.id": "1822f5ba-2907-4a07-b786-70f5161c0ed5", "service.version": "latest"}
   ```
 
-* In another console or in the web browser examin if metrics are exposed under [localhost:8888/metrics](localhost:8888/metrics). You should see output similar to this one:
+* In another console or in the web browser examin if metrics are exposed under [http://localhost:8888/metrics](http://localhost:8888/metrics). You should see output similar to this one:
 
   ```bash
   $ curl localhost:8888/metrics
@@ -49,7 +49,7 @@ For this excersice we need an application which will create and expose metrics i
   otelcol_process_uptime{service_instance_id="caaa9fe6-8dad-458d-a6bc-8d7e1f0fd4c2",service_version="latest"} 1230.0165619999998
   ```
 
-  Keep this otelcol instance running. We will need it for the rest of this excersize.
+  Keep this otelcol instance running. We will need it for the rest of this exercise.
 
 ## Second otelcol instance for metrics collection
 
@@ -71,12 +71,12 @@ At this point we need a second otelcol instance which will scrape Prometheus met
   2022-05-21T12:51:21.550+0200	error	service/collector.go:174	Asynchronous error received, terminating process	{"error": "listen tcp :8888: bind: address already in use"}
   ```
 
-  That's because it tries to serve metrics at [localhost:8888](localhost:8888) - but our first process is already using that address!  
+  That's because it tries to serve metrics at [http://localhost:8888](http://localhost:8888) - but our first process is already using that address!  
   Change [config.yaml](./config.yaml) configuration file for the second otelcol instance by changing the `.service.telemetry.metrics.address` key. Try using the `0.0.0.0:8889` address and running otelcol again.
 
 ## Question
 
-How many metrics you get vs how many are exposed at [localhost:8888/metrics](localhost:8888/metrics)? Can you find what are the additional ones? Try changing the `.exporters.logging.loglevel=debug` to find out.
+How many metrics you get vs how many are exposed at [http://localhost:8888/metrics](http://localhost:8888/metrics)? Can you find what are the additional ones? Try changing the `.exporters.logging.loglevel=debug` to find out.
 
 ## Autoscrape
 
