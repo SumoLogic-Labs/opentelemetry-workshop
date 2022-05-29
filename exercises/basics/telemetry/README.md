@@ -16,7 +16,7 @@
   2022-05-28T11:52:29.226+0200	info	service/telemetry.go:129	Serving Prometheus metrics	{"address": ":8888", "level": "basic", "service.instance.id": "0490fae5-3ac4-445e-bf5d-ef6c78a9bee9", "service.version": "latest"}
   ```
 
-* While still running otelcol, check the telemetry data that is exposed at the default [https://localhost:8888](https://localhost:8888). You can do that using the web browser or with help of `curl` command run in other console window:
+* While still running otelcol, check the telemetry data that is exposed at the default endpoint [http://localhost:8888/metrics](http://localhost:8888/metrics). You can do that using the web browser or with help of `curl` command run in other console window:
 
   ```bash
   $ curl -s localhost:8888/metrics
