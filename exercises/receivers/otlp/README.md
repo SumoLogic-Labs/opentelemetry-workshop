@@ -17,12 +17,12 @@ OTLP protocol is one of the most important parts of the OpenTelemetry project. W
 
   At this point otelcol is litening on `0.0.0.0:4318` address waiting for incoming spans - building blocks for traces
 
-* Spans can be created using the OpenTelemetry libraries available for many programming languages. They can be sent over HTTP as simple JSON as well. Here we will send them with simple `curl` command.
+* Spans can be created using the OpenTelemetry libraries available for many programming languages. They can be sent over HTTP as simple JSON as well.
 
-  Take a look at the [send-span.sh](./send-span.sh) script. Make sure it will send span to your locally running otelcol instance:
+  Send [trace.json](./trace.json) payload to your locally running otelcol instance with help of a `curl` command:
 
   ```bash
-  $ ./send-span.sh
+  $ curl -v "http://localhost:4318/v1/traces"  -H 'Content-type: application/json' -d @trace.json
   *   Trying 127.0.0.1:4318...
   * Connected to localhost (127.0.0.1) port 4318 (#0)
   > POST /v1/traces HTTP/1.1
@@ -30,12 +30,12 @@ OTLP protocol is one of the most important parts of the OpenTelemetry project. W
   > User-Agent: curl/7.79.1
   > Accept: */*
   > Content-type: application/json
-  > Content-Length: 877
+  > Content-Length: 857
   >
   * Mark bundle as not supporting multiuse
   < HTTP/1.1 200 OK
   < Content-Type: application/json
-  < Date: Fri, 27 May 2022 19:15:12 GMT
+  < Date: Sun, 29 May 2022 08:16:21 GMT
   < Content-Length: 2
   <
   * Connection #0 to host localhost left intact
