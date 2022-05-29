@@ -90,4 +90,6 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
   * [OpenTelemetry Collector exporters](https://github.com/open-telemetry/opentelemetry-collector/tree/v0.51.0/exporter)
   * [OpenTelemetry Collector Contrib exporters](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.51.0/exporter)
 
-## The Coffee Bar app
+## Demo
+
+* [The Coffee Bar](./exercises/the-coffee-bar/)
