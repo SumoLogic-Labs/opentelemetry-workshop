@@ -44,8 +44,6 @@ Short presentation on OpenTelemetry in general: [Observability 2.0 vs OpenTeleme
   * [OTLP](./exercises/receivers/otlp/)
 * Logs
   * [Filelog](./exercises/receivers/filelog/)
-    * operator - router
-    * multiline logs
   * [Syslog](./exercises/receivers/syslog/)
 * Metrics
   * [Host Metrics](./exercises/receivers/hostmetrics/)
