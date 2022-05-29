@@ -2,13 +2,13 @@
 
 ## What is OpenTelemetry
 
-Short presentation on what is OpenTelemetry in general, what it can be used for: [Observability 2.0 vs OpenTelemetry](https://slides.com/perk/obsevability-20-feat-opentelemetry)
+Short presentation on OpenTelemetry in general: [Observability 2.0 vs OpenTelemetry](https://slides.com/perk/obsevability-20-feat-opentelemetry)
 
 ## Data creation
 
 * [Manual instrumentation](./exercises/instrumentation/): write a simple application which creates logs, metrics and traces using the OpenTelemetry libraries
 
-* Autoinstrumentation: Pet Clinic
+* For autoinstrumentation please take a look at [Spring PetClinic](https://github.com/SumoLogic/opentelemetry-petclinic) demo at the end of the workshop
 
 ## Data collection
 
@@ -87,3 +87,4 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 * [Prerequisites](./exercises/demo/prerequisites/)
 * [Sumo Logic OpenTelemetry Collector](./exercises/demo/sumologic-otel-collector/)
 * [The Coffee Bar](./exercises/the-coffee-bar/)
+* [Pet Clinic](https://github.com/SumoLogic/opentelemetry-petclinic)
