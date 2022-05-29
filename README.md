@@ -34,7 +34,6 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 
 * [Health Check](./exercises/extensions/healthcheck/)
 * [zPages](./exercises/extensions/zpages/)
-* Performance Profiler
 
 ### Receivers
 
