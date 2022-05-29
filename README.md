@@ -35,6 +35,10 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 * [Health Check](./exercises/extensions/healthcheck/)
 * [zPages](./exercises/extensions/zpages/)
 
+* Other extensions:
+  * [OpenTelemetry Collector extensions](https://github.com/open-telemetry/opentelemetry-collector/tree/v0.51.0/extension)
+  * [OpenTelemetry Collector Contrib extensions](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.51.0/extension)
+
 ### Receivers
 
 * Logs, metrics and traces
@@ -55,6 +59,9 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 * Traces
   * [Zipkin, Jaeger](./exercises/receivers/zipkin/)
 
+* Other receivers:
+  * [OpenTelemetry Collector receivers](https://github.com/open-telemetry/opentelemetry-collector/tree/v0.51.0/receiver)
+  * [OpenTelemetry Collector Contrib receivers](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.51.0/receiver)
 
 ### Processors
 
@@ -67,6 +74,10 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 * [Transform](./exercises/processors/transform/)
 * [Tail Sampling](./exercises/processors/tailsampling/)
 
+* Other processors:
+  * [OpenTelemetry Collector processors](https://github.com/open-telemetry/opentelemetry-collector/tree/v0.51.0/processor)
+  * [OpenTelemetry Collector Contrib processors](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.51.0/processor)
+
 ### Exporters
   
 * [File](./exercises/exporters/file/)
@@ -74,5 +85,9 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 * [Load balancing](./exercises/exporters/loadbalancing/)
 * [Prometheus](./exercises/exporters/prometheus/)
 * Sumo Logic
+
+* Other exporters:
+  * [OpenTelemetry Collector exporters](https://github.com/open-telemetry/opentelemetry-collector/tree/v0.51.0/exporter)
+  * [OpenTelemetry Collector Contrib exporters](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.51.0/exporter)
 
 ## The Coffee Bar app
