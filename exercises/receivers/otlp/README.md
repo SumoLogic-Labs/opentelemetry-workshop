@@ -72,6 +72,6 @@ OTLP protocol is one of the most important parts of the OpenTelemetry project. W
        -> net.peer.port: INT(4444)
   ```
 
-* Play a bit with the [send-span.sh](./send-span.sh) script, for example:
+* Play a bit with the [trace.json](./trace.json) payload, for example:
   * add the `spans.motto` key with `"there is no trace"` value to resource attributes (labels)
   * add the `use.otlp.for` key with `"all three: logs, metrics and traces"` value to the record attributes
