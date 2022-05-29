@@ -4,8 +4,13 @@
 * To start with, a lot of details are covered in [specification](https://github.com/open-telemetry/opentelemetry-specification) 
 * OpenTelemetry is using a rich underlying data model 
 * Protobuf definition in [opentelemetry-proto](https://github.com/open-telemetry/opentelemetry-proto)
+* OTLP (OpenTelemetry Line Protocol)
 
-# Concepts
+# Concepts - Layers
+
+![Model layers](assets/img/OTLP-layers.png)
+
+# Concepts - OTLP Batch
 
 ![Model structure](assets/img/OTLP-model.png)
 
