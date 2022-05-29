@@ -3,13 +3,15 @@
 For this exercise, we will simplify a couple of things. Since you are already aware on the pipeline setup, we
 are going to use one that is readily available.
 
+General OpenTelemetry Metrics concepts are explained in [Metrics Specification](https://opentelemetry.io/docs/reference/specification/metrics/)
+
+![https://github.com/open-telemetry/opentelemetry-specification/raw/main/specification/metrics/img/model-event-layer.png](https://github.com/open-telemetry/opentelemetry-specification/raw/main/specification/metrics/img/model-event-layer.png)
+
 OpenTelemetry supports [several kinds of instruments](https://opentelemetry-python.readthedocs.io/en/stable/api/metrics.html),
 which are accessible through [the SDK](https://opentelemetry-python.readthedocs.io/en/stable/sdk/metrics.html)
 
 For the purpose of this exercise we will just play with the counters, but we encourage you to play
 with other types as well.
-
-General API concepts are available in [Metrics API Specification](https://opentelemetry.io/docs/reference/specification/metrics/api/)
 
 ## Setting up the libraries
 

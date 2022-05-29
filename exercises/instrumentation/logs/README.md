@@ -3,7 +3,9 @@
 [Logs support](https://opentelemetry.io/docs/reference/specification/overview/#log-signal) is 
 in early phase in OpenTelemetry Instrumentation. Rather than replacing the 
 existing logging libraries, OpenTelemetry helps with consuming the log data by exporting
-them via OTLP as needed. 
+them via OTLP as needed ([new first-party application logs](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/overview.md#new-first-party-application-logs)). 
+
+![https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/overview.md#new-first-party-application-logs](https://github.com/open-telemetry/opentelemetry-specification/raw/main/specification/logs/img/application-api-sdk.png)
 
 OpenTelemetry Logging is best described in the [Logs specification overview](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/overview.md)
 
