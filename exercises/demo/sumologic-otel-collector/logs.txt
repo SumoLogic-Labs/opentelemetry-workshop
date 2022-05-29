@@ -1,0 +1,3 @@
+WARN Host=lolcathost, Type=laptop Hello World, high severity
+DEBUG Host=lolcathost, Type=laptop Hello World, low severity
+WARN Host=foobarhost, Type=laptop Hello World, high severity

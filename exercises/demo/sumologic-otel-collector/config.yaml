@@ -1,0 +1,22 @@
+exporters:
+  sumologic:
+  logging:
+
+extensions:
+  sumologic:
+    install_token: ${SUMOLOGIC_TOKEN}
+
+receivers:
+  filelog:
+    include:
+    - ./logs.txt
+    include_file_name: false
+    include_file_path_resolved: true
+    start_at: beginning
+
+service:
+  extensions: [sumologic]
+  pipelines:
+    logs:
+      receivers: [filelog]
+      exporters: [sumologic, logging]

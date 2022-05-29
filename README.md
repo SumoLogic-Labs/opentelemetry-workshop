@@ -85,5 +85,5 @@ Short presentation on what is OpenTelemetry in general, what it can be used for:
 ## Demo
 
 * [Prerequisites](./exercises/demo/prerequisites/)
-* Sumo Logic OpenTelemetry Collector
+* [Sumo Logic OpenTelemetry Collector](./exercises/demo/sumologic-otel-collector/)
 * [The Coffee Bar](./exercises/the-coffee-bar/)
