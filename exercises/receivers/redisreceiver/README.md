@@ -9,7 +9,7 @@
 * Connect to Redis using the `telnet` command. When connected, issue the `INFO` command:
 
   ```bash
-  $ telnet localhost 6379
+  $ telnet localhost 16379
   Trying ::1...
   Connected to localhost.
   Escape character is '^]'.
