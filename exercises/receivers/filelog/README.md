@@ -19,7 +19,7 @@
 
 * Read the [Filelog Receiver documentation](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/v0.51.0/receiver/filelogreceiver)
 
-* Change the configuration to read from the beginning of the file
+* Change configuration to read from the beginning of the file using `start_at: beginning`
 
   You should now see that `otelcol` received 2 log lines:
 
