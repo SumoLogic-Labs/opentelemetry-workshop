@@ -13,4 +13,4 @@ the server.
 1. [Warmup](plain)
 2. [Logs](logs)
 3. [Metrics](metrics)
-4. [Traces](traces)
+4. [Traces](tracing)
