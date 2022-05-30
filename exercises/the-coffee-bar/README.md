@@ -8,6 +8,8 @@ communicating with `calculator-svc` and `postgres` database.
 
 All services are instrumented using [OpenTelemetry](https://opentelemetry.io/) solution.
 
+The Coffee Bar application repository can be found [here](https://github.com/SumoLogic/the-coffee-bar).
+
 ## Prerequisites
 
 Make sure to finish the [prerequisites](../demo/prerequisites/) first. As a result of that you should have your `SUMOLOGIC_TOKEN` env variable exported:
