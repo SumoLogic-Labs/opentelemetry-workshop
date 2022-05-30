@@ -32,6 +32,7 @@ def number_request(number):
 
     try:
         parsed_number = int(number)
+        hist.record(parsed_number)
 
         return {
             "argument": parsed_number,
@@ -58,6 +59,7 @@ setup_metric_provider()
 meter = get_meter_provider().get_meter("workshop", "0.1")
 request_counter = meter.create_counter("requests_count")
 failure_counter = meter.create_counter("failed_requests_count")
+hist = meter.create_histogram("values-histogram")
 
 
 if __name__ == "__main__":

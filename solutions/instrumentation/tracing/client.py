@@ -1,3 +1,4 @@
+import logging
 from os import getenv
 from time import sleep
 from requests import get
@@ -9,12 +10,15 @@ from opentelemetry.propagate import inject
 
 server = getenv('FIB_HOSTNAME', 'localhost')
 port = getenv('FIB_PORT', 8080)
+logging.basicConfig(level=logging.INFO)
 
 
 def get_fib(number):
     with trace.get_tracer_provider().get_tracer(__name__).start_as_current_span("get-fib"):
         headers = {}
         inject(headers)
+
+        logging.info(headers)
 
         response = get(
             "http://{}:{}/{}".format(server, port, number),
