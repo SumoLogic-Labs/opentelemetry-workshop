@@ -19,8 +19,6 @@ def get_fib(number):
 
 
 if __name__ == "__main__":
-    setup_log_provider()
-
     while True:
         for i in range(-1, 32):
             result = get_fib(i)
